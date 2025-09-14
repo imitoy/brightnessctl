@@ -197,6 +197,9 @@ int main(int argc, char **argv) {
 		usage();
 		exit(EXIT_FAILURE);
 	}
+	char *env_path = getenv("BRIGHTNESSCTL_DEVICE");
+	if (env_path != NULL && *env_path)
+		p.device = strdup(env_path);
 	argc -= optind;
 	argv += optind;
 	if (p.device && !strcmp(p.device, "*") && !p.class) {

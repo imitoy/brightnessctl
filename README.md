@@ -63,4 +63,7 @@ Valid values:
   percentage value		Example: 50%
   specific delta		Example: 50- or +10
   percentage delta		Example: 50%- or +10%
+
+Environment variables:
+  BRIGHTNESSCTL_DEVICE			The default device to set.
  ```
